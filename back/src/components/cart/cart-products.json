@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_ext_cart_products",
+  "info": {
+    "displayName": "Cart Products",
+    "icon": "grid",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ext.cart-product-item"
+    }
+  }
+}

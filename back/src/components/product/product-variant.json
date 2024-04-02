@@ -1,0 +1,59 @@
+{
+  "collectionName": "components_ext_product_variants",
+  "info": {
+    "displayName": "ProductVariant",
+    "icon": "dashboard",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "variant_name": {
+      "type": "string",
+      "required": true
+    },
+    "variant_price": {
+      "type": "decimal",
+      "required": true,
+      "min": 0
+    },
+    "variant_discount_price": {
+      "type": "decimal",
+      "default": 0
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images"]
+    },
+    "quantity": {
+      "required": true,
+      "type": "biginteger",
+      "default": "0"
+    },
+    "in_stock": {
+      "type": "boolean",
+      "default": true
+    },
+    "size": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string",
+      "required": false,
+      "regex": "^((#[A-Fa-f0-9]{6}|#[A-Fa-f0-9]{3})|0*)$",
+      "customField": "plugin::color-picker.color"
+    },
+    "product_free": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::product.product"
+    }
+  }
+}

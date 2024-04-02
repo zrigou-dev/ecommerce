@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_interests",
+  "info": {
+    "singularName": "user-interest",
+    "pluralName": "user-interests",
+    "displayName": "UserInterest"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user_id": {
+      "type": "string"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::category.category",
+      "inversedBy": "user_interests"
+    }
+  }
+}

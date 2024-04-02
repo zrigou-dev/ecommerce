@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_ext_pictograms",
+  "info": {
+    "displayName": "Pictogram",
+    "icon": "pinMap",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "color": {
+      "type": "string",
+      "regex": "^#([a-fA-F0-9]{3,4}|[a-fA-F0-9]{6}|[a-fA-F0-9]{8})$",
+      "required": true
+    },
+    "size": {
+      "type": "string"
+    }
+  }
+}
