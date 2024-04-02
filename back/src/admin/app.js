@@ -36,14 +36,14 @@ const config = {
   translations: {
     fr: {
       "content-manager.containers.List.nbrs_products": "Nombre des produits",
-      "Auth.form.welcome.title": "Bienvenue Dabablane !",
+      "Auth.form.welcome.title": "Bienvenue anis !",
       "app.components.LeftMenu.navbrand.title": "Super dashboard",
       "app.components.LeftMenu.navbrand.workplace": "Administration",
     },
     en: {
       "content-manager.containers.List.nbrs_products": "Nbrs products",
-      "Auth.form.welcome.title": "Welcome to Dabablane",
-      "app.components.LeftMenu.navbrand.title": "Dabablane dashboard",
+      "Auth.form.welcome.title": "Welcome to anis",
+      "app.components.LeftMenu.navbrand.title": "anis dashboard",
       "app.components.LeftMenu.navbrand.workplace": "Admin panel",
     },
   },
@@ -55,7 +55,7 @@ const config = {
 
 const bootstrap = (app) => {
   console.log(app);
-  document.title = "Dabablane e-commerce";
+  document.title = "anis e-commerce";
 };
 
 export default {
